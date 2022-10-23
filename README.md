@@ -22,3 +22,6 @@ npm install
 ```
 npm run serve
 ```
+## Observações
+
+Usei o _Jest_ para testes somente no final do projeto para prática, mas o recomendado é usar _TDD - Test Driven Development_ (Desenvolvimento Orientado por Testes).

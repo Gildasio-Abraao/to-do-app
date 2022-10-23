@@ -62,7 +62,10 @@ export default {
     };
   },
   props: {
-    theme: {},
+    theme: {
+      type: Object,
+      default: () => {},
+    },
   },
   methods: {
     sendTasks() {

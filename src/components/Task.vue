@@ -68,8 +68,14 @@ export default {
   name: 'task-item',
   emits: ['delete-task', 'is-active', 'show-all', 'clear-completed'],
   props: {
-    list: [],
-    filter: {},
+    list: {
+      type: Array,
+      default: () => [],
+    },
+    filter: {
+      type: Object,
+      default: () => {},
+    },
   },
 }
 </script>
@@ -86,7 +92,7 @@ export default {
   }
   .input-group {
     box-shadow: none;
-    border-radius: 0;
+    border-radius: 0px;
     border-bottom: 1px solid #7373731c;
   }
   .radius {
